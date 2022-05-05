@@ -10,6 +10,9 @@
     --corPrimaria: #00856F;
     --corSecundaria: #212529;
     --paragrafo: #495057;
+    --varBrandGreenLight: #DCE9E2;
+    --varBrandGreenLight2: #FFFAF1;
+
 }
 
 body {
@@ -20,6 +23,7 @@ body {
 main {
     width: 37.5rem;
     margin: auto;
+    background: var(--varBrandGreenLight);
 }
 
 h1 {
@@ -84,4 +88,29 @@ main figure img:nth-child(2) {
     position: absolute;
     left: 50%;
     transform: translate(-50%);
+}
+
+.dadosEstatisticos {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 32.7rem;
+    height: 47rem;
+
+    padding: 4rem 0;
+    background: var(--varBrandGreenLight2);
+    border: 0.1rem solid var(--varBrandGreenLight);
+    gap: 6rem;
+}
+
+.dadosEstatisticos .blocoDados h3 {
+    font-size: 4.8rem;
+    font-weight: 700;
+    line-height: 130%;
+}
+
+.dadosEstatisticos .blocoDados p {
+    font-size: 1.6rem;
+    line-height: 150%;
+    margin: 0.4rem 0 0;
 }
